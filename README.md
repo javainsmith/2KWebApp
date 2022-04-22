@@ -1,4 +1,4 @@
-# 2KWebApp
+# Web Log Parser
 
 A web log parser using Flask and Python!
 
