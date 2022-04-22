@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <title>IP Requests</title>
+</head>
+<body bgcolor="#EEEEEE">
+<h1 style="color: #5e9ca0;">Log Parser!</h1>
+<h1 style="color: #5e9ca0;">&nbsp; &nbsp; &nbsp; &nbsp;</h1>
+<h2 style="color: #2e6c80;">Parsing Options:</h2>
+<table class="Table" style="border-style: hidden; width: 452px; height: 188px;">
+    <thead>
+    <tr style="height: 40px;">
+        <td style="width: 188.969px; height: 40px;"> List of Current Logs:
+            {% for name in List %}
+            <p>{{name}}</p>
+            {% endfor %}
+        </td>
+        <td style="width: 249.031px; height: 40px;"> Enter log name from list to parse:
+            <form action = "http://localhost:5000/input" method="POST">
+    <input name="text">
+    <input type="submit">
+</form></td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 188.969px; height: 18px;">New Log? Upload Here -> </td>
+        <td style="width: 249.031px; height: 18px;">
+            <form action = "http://localhost:5000/upload" method = "POST"
+                                                          enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit"/>
+        </td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr style="height: 40px;">
+        <td style="width: 188.969px; height: 40px;">Current Log is:</td>
+        <td style="width: 249.031px; height: 40px;"><span style="color: black; font-size: 16px;"><b>{{CurrentLog}}</b></span></td>
+    <tr style="height: 40px;">
+        <td style="width: 188.969px; height: 40px;">View Unique IPs Count</td>
+        <td style="width: 249.031px; height: 40px;"><a href="unique"><span style="color: blue; font-size: 16px;">Click Here</span></a></td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 188.969px; height: 18px;">How Many Rquests per IP</td>
+        <td style="width: 249.031px; height: 18px;"><a href="requests"><span style="color: blue; font-size: 16px;">Click Here</span></a></td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 188.969px; height: 18px;">HTTP Status Code Distribution</td>
+        <td style="width: 249.031px; height: 18px;"><a href="codes"><span style="color: blue; font-size: 16px;">Click Here</span></a></td>
+    </tr>
+    <tr style="height: 40px;">
+        <td style="width: 188.969px; height: 40px;">Webpage Popularity</td>
+        <td style="width: 249.031px; height: 40px;"><a href="webpages"><span style="color: blue; font-size: 16px;">Click Here</span></a></td>
+    </tr>
+    <tr style="height: 36px;">
+        <td style="width: 188.969px; height: 36px;">Popular Browsers</td>
+        <td style="width: 249.031px; height: 36px;"><a href="browsers"><span style="color: blue; font-size: 16px;">Click Here</span></a></td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 188.969px; height: 18px;">Request Method Distribution</td>
+        <td style="width: 249.031px; height: 18px;"><a href="methods"><span style="color: blue; font-size: 16px;">Click Here</span></a></td>
+    </tr>
+    <tr style="height: 18px;">
+        <td style="width: 188.969px; height: 18px;">API List</td>
+        <td style="width: 249.031px; height: 18px;"><a href="api"><span style="color: blue; font-size: 16px;">Click Here</span></a></td>
+    </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
