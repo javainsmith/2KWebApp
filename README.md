@@ -24,13 +24,16 @@ API List
 
 ### Dependencies
 * Python 3.x
-* Import Flask
+* Flask
 * Import os
 * Browser to display web front end.
 
 ### Installing
 
 * Clone this repository as is.
+```
+pip install Flask
+```
 
 ### Executing program
 
