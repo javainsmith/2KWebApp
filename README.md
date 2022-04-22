@@ -12,13 +12,13 @@ There is also API endpoints included that can be used to feed information into o
 
 ## Features
 
-View Unique IPs Count
-How Many Requests per IP	
-HTTP Status Code Distribution	
-Webpage Popularity
-Popular Browsers
-Request Method Distribution
-API List
+* View Unique IPs Count
+* How Many Requests per IP	
+* HTTP Status Code Distribution	
+* Webpage Popularity
+* Popular Browsers
+* Request Method Distribution
+* API List
 
 ## Getting Started
 
