@@ -23,8 +23,9 @@ API List
 ## Getting Started
 
 ### Dependencies
-* Flask
 * Python 3.x
+* Import Flask
+* Import os
 * Browser to display web front end.
 
 ### Installing
