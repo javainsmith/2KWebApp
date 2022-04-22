@@ -42,7 +42,7 @@ pip install Flask
 ### Executing program
 
 * How to run the program:
-* For Windows, I recommend running this program through PyCharm if available as it abstracts a lot of the customizations that’s needed to run python applications
+* For Windows, I recommend running this program through PyCharm if available as it abstracts a lot of the customizations that’s needed to run python applications.
 * For Mac/UNIX:
 ```
 cd webapp
