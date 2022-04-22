@@ -30,8 +30,12 @@ There is also API endpoints included that can be used to feed information into o
 
 ### Installing
 
-* Clone this repository as is.
+
+Clone this repository as is.
 ```
+mkdir webapp
+cd webapp
+git clone https://github.com/javainsmith/2KWebApp/
 pip install Flask
 ```
 
@@ -41,6 +45,7 @@ pip install Flask
 * For Windows, I recommend running this program through PyCharm if available as it abstracts a lot of the customizations that’s needed to run python applications
 * For Mac/UNIX:
 ```
+cd webapp
 ./app.py
 ```
 
